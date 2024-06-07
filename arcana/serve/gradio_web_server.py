@@ -286,8 +286,8 @@ def http_bot(state, model_selector, temperature, top_p, max_new_tokens, request:
         fout.write(json.dumps(data) + "\n")
 
 title_markdown = ("""
-# 🌋 LLaVA: Large Language and Vision Assistant
-[[Project Page](https://llava-vl.github.io)] [[Code](https://github.com/haotian-liu/LLaVA)] [[Model](https://github.com/haotian-liu/LLaVA/blob/main/docs/MODEL_ZOO.md)] | 📚 [[LLaVA](https://arxiv.org/abs/2304.08485)] [[LLaVA-v1.5](https://arxiv.org/abs/2310.03744)] [[LLaVA-v1.6](https://llava-vl.github.io/blog/2024-01-30-llava-1-6/)]
+# Arcana: Improving Multi-modal Large Language Model through Boosting Vision Capabilities 
+[[Project Page](https://arcana-project-page.github.io/)] [[Code](https://github.com/syp2ysy/Arcana)] [[Model](https://huggingface.co/syp115/Arcana/tree/main)] | 📚 [[Arcana](https://arxiv.org/abs/xxx)] 
 """)
 
 tos_markdown = ("""
@@ -351,7 +351,7 @@ def build_demo(embed_mode, cur_dir=None, concurrency_count=10):
             with gr.Column(scale=8):
                 chatbot = gr.Chatbot(
                     elem_id="chatbot",
-                    label="LLaVA Chatbot",
+                    label="Arcana Chatbot",
                     height=650,
                     layout="panel",
                 )
