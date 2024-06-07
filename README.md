@@ -7,7 +7,7 @@
 
 * **[2024.06.07]**  🔥🔥 Our code and demo are available now !
 
-* **[2024.06.07]**  🔥🤗 Our Arcana is released, please check out and download in [Arcana](https://huggingface.co/syp115/Arcana) !
+* **[2024.06.07]**  🔥🤗 Our Arcana is released, please check out and download in [Arcana](https://huggingface.co/syp115/Arcana_star) !
 
 
 ## 😮 Highlights
