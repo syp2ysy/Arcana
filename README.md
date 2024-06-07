@@ -13,6 +13,28 @@
 ## 😮 Highlights
 The <strong><em>visual perception capabilities</em></strong> of MLLMs directly impact their performance. It is well-known that the main factors influencing MLLMs' visual perception are <strong><em>data</em></strong> and <strong><em>structure</em></strong>.
 <strong><em>Arcana</em></strong> aims to enhance the visual perception capabilities of MLLMs by addressing both of these aspects.
+- On the <strong><em>data</em></strong> side, there is a scarcity of open-source data, and the available multimodal datasets contain limited visual components, preventing MLLMs from gaining sufficient visual perception capabilities from these sources.  To this end, we have developed a data engine to annotate multimodal data that ensures a diversity of visual factors.
+- On the <strong><em>structural</em></strong> side, the language-driven decoder couples visual and language modalities within the same space, disregarding their unique characteristics and potentially causing information confusion or blurring. Furthermore, the frozen visual encoder cannot provide robust visual features, and directly fine-tuning it with a small dataset can affect its generalization capabilities. Toward this end, Arcana introduces MM-LoRA, which constructs a multimodal decoder to preserve the unique characteristics of different modalities. We also propose a Query Ladder adapter (QLadder) for the visual encoder, which retains the pre-trained image encoder's capabilities while introducing a small number of visual tokens to significantly enhance the model's ability to learn and represent visual information.
+<!-- Model Image-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="assets/framework.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          (a) The architecture of the <b>Arcana</b>. (b) The training pipeline of Arcana. MM-LoRA is optional during the pre-training phase.
+        </h2>
+      <img src="assets/mmlora.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          (a) The farmework of <b>MM-LoRA</b> vs. <b>LoRA</b>. MM-LoRA introduces two new hyperparameters, &beta; and &gamma;
+          , to control the ranks of the visual and language LoRAs, respectively. Notably,
+          we set &beta; + &gamma; = 1 to ensure that MM-LoRA has the same number of parameters as LoRA. (b) The
+          architecture of the visual encoder includes the <b>QLadder</b> adapter and CLIP. The QLadder adapter
+          consists of cross-attention and FFN layers, with weights initialized from those of CLIP.
+       </h2>
+    </div>
+  </div>
+</section>
+<!-- End Model Image -->
 
 
 ## 🛠️ Requirements and Installation
