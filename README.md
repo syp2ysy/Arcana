@@ -21,15 +21,12 @@ The <strong><em>visual perception capabilities</em></strong> of MLLMs directly i
     <div class="hero-body">
       <img src="assets/framework.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          (a) The architecture of the <b>Arcana</b>. (b) The training pipeline of Arcana. MM-LoRA is optional during the pre-training phase.
+          (a) The architecture of the <b>Arcana</b>. (b) The training pipeline of Arcana.
         </h2>
       <img src="assets/mmlora.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          (a) The farmework of <b>MM-LoRA</b> vs. <b>LoRA</b>. MM-LoRA introduces two new hyperparameters, &beta; and &gamma;
-          , to control the ranks of the visual and language LoRAs, respectively. Notably,
-          we set &beta; + &gamma; = 1 to ensure that MM-LoRA has the same number of parameters as LoRA. (b) The
-          architecture of the visual encoder includes the <b>QLadder</b> adapter and CLIP. The QLadder adapter
-          consists of cross-attention and FFN layers, with weights initialized from those of CLIP.
+          (a) The farmework of <b>MM-LoRA</b> vs. <b>LoRA</b>. (b) The
+          architecture of the visual encoder includes the <b>QLadder</b> adapter and CLIP.
        </h2>
     </div>
   </div>
