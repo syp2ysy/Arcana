@@ -20,14 +20,7 @@ The <strong><em>visual perception capabilities</em></strong> of MLLMs directly i
   <div class="container is-max-desktop">
     <div class="hero-body">
       <img src="assets/framework.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          (a) The architecture of the <b>Arcana</b>. (b) The training pipeline of Arcana.
-        </h2>
       <img src="assets/mmlora.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          (a) The farmework of <b>MM-LoRA</b> vs. <b>LoRA</b>. (b) The
-          architecture of the visual encoder includes the <b>QLadder</b> adapter and CLIP.
-       </h2>
     </div>
   </div>
 </section>
