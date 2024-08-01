@@ -30,7 +30,7 @@ class CLIPVisionTower(nn.Module):
         image_features = torch.cat([image_features_clip, image_features_ladder], dim=1)
         return image_features
 
-    @torch.no_grad()
+    # @torch.no_grad()
     def forward(self, images):
         if type(images) is list:
             image_features = []
